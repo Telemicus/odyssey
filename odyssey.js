@@ -707,7 +707,14 @@ TODO: Need to create code snippet that can capture errors or start other listene
     };
 
     /**
-     * Sets up the overwrites for native functions
+     * Create wrappers for native functionality for tracking purposes.
+     * Wrappers implemented for the following native functions
+     * - XMLHttpRequest.prototype.open
+     * - XMLHttpRequest.prototype.send
+     * - fetch
+     * - MutationObserver**
+     * 
+     * **Implemented, but does not overwrite native functionality
      */
     w._ODSY.nativeOverwrites = {
         //Stores the native prototype for XMLHttpRequest.prototype.open 
@@ -827,6 +834,7 @@ TODO: Need to create code snippet that can capture errors or start other listene
             }
         },
         //This might not belong here since it's not technically overwriting anything
+        //TODO: Implement MutationObserver functionality for tracking SPA
         mutationObserver: function () {
 
         }
