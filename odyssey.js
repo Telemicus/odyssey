@@ -24,7 +24,7 @@ TODO: Need to create code snippet that can capture errors or start other listene
         
         //TODO: Create example beacon endpoint
         //Beacon endpoint URL - this is where the data gets sent via `sendBeacon()`
-        beaconUrl: "http://localhost/Odyssey/beacon.php",
+        beaconUrl: "http://localhost/odyssey/beacon.php",
         
         //config contains all the unique configurations that are read by different parts of the tag
         config: {
